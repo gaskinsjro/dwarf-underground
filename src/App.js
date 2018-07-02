@@ -3,6 +3,11 @@ import './App.css';
 import Header from './Header'
 import BodyParagraph from './BodyParagraph';
 import HammerAd from './HammerAd'
+import MountainAd from './MountainAd';
+import IndyOrcs from './IndyOrcs';
+import AuthorEtTitle from './AuthorEtTitle'
+import ComShare from './ComShare'
+
 
 class App extends Component {
   render() {
@@ -13,25 +18,9 @@ class App extends Component {
       
   <main className="expanded row">
     <div className="large-8 medium-12 columns article">
-      <h2 className="article-title">Gold Madness - Fact or Fiction?</h2>
-      <div className="avatar">
-        <img src="http://www.zbrushcentral.com/attachment.php?attachmentid=376082" alt="author" />
-        <div className="author-info">
-          <p className="author-name">By Domri, son of Flug</p>
-          <p className="date">on 28 April, 3018 of the Third Age</p>
-        </div>
-      </div>
+      <AuthorEtTitle/>
       <BodyParagraph/>
-      <div className="article-links">
-        <a className="article-link" href="#">
-          <i className="fa fa-comments-o"></i>
-          <span className="article-link-text">Comments</span>
-        </a>
-        <a className="article-link" href="#">
-          <i className="fa fa-share"></i>
-          <span className="article-link-text">Share Post</span>
-        </a>
-      </div>
+      <ComShare/>
     </div>
     <aside className="large-4 medium-12 columns">
       <HammerAd/>
@@ -40,16 +29,10 @@ class App extends Component {
     <div className="small-12 columns other-articles">
       <h2>From around the Realm</h2>
       <div className="small-6 medium-3 columns other-article">
-        <a href="#">
-          <img src="https://www.enclavepublishing.com/wp-content/uploads/2015/11/tumblr_inline_mtvwr6T4qH1r8eb4v.gif" alt="orc" />
-          <p>Single Orcs in Indianapolis</p>
-        </a>  
+        <IndyOrcs/>
       </div>
       <div className="small-6 medium-3 columns other-article">
-        <a href="#">
-          <img src="https://images.fineartamerica.com/images-medium-large-5/rocky-mountain-landscape-meadow-in-spring-western-panorama-with-wildflowers-square-format-walt-curlee.jpg" alt="mountain" />
-          <p>You won't believe what's under this mountain</p>
-        </a>  
+        <MountainAd/>
       </div>
       <div className="small-6 medium-3 columns other-article">
         <a href="#">
